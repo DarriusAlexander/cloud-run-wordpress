@@ -41,7 +41,7 @@ define( 'DB_USER', getenv('darriush') );
 define( 'DB_PASSWORD', getenv('Starwind1') );
 
 /** MySQL hostname */
-define( 'DB_HOST', getenv('104.197.142.150') );
+define( 'DB_HOST', getenv('localhost') );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -66,7 +66,6 @@ define('AUTH_SALT',        'K20bbh3/ K0)E>txfh)0Txs7&f+V;[1D?_; 1H>v3]EOjS+.vJfd
 define('SECURE_AUTH_SALT', '$TjR1cG:6hA`IoW_2Snl4T%aiQP&]=AyGC|hk1w/+%Vk6n&Lc665[bG`sUL+7#Z(');
 define('LOGGED_IN_SALT',   '+/rbSF=/`-1pdGjcKZLLF+%O{Txv<`:8PrenadsEM-Zo/*sroyB#=&UaG~ydj*L,');
 define('NONCE_SALT',       'C{)g/R-h}j}<qK=jzK@WHcE|-4/l#laLpvP+pYT?,6|A9ViqLp05[!H89;YVUu|9');
-
 /**#@-*/
 
 /**
