@@ -41,7 +41,7 @@ define( 'DB_USER', getenv('wordpress') );
 define( 'DB_PASSWORD', getenv('wordpress') );
 
 /** MySQL hostname */
-define( 'DB_HOST', getenv('34.66.11.220') );
+define( 'DB_HOST', getenv(':/cloudsql/wp') );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
