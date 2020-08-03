@@ -32,7 +32,7 @@ if (
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', getenv('wp')  );
+define( 'DB_NAME', getenv('wordpress')  );
 
 /** MySQL database username */
 define( 'DB_USER', getenv('wordpress') );
@@ -41,7 +41,7 @@ define( 'DB_USER', getenv('wordpress') );
 define( 'DB_PASSWORD', getenv('wordpress') );
 
 /** MySQL hostname */
-define( 'DB_HOST', getenv('127.0.0.1') );
+define( 'DB_HOST', getenv('34.66.11.220') );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
