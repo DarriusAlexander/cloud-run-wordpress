@@ -35,13 +35,13 @@ if (
 define( 'DB_NAME', getenv('wp')  );
 
 /** MySQL database username */
-define( 'DB_USER', getenv('darriush') );
+define( 'DB_USER', getenv('wordpress') );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', getenv('Starwind1') );
+define( 'DB_PASSWORD', getenv('wordpress') );
 
 /** MySQL hostname */
-define( 'DB_HOST', getenv('localhost') );
+define( 'DB_HOST', getenv('127.0.0.1') );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
