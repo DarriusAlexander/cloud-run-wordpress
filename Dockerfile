@@ -11,7 +11,8 @@ COPY wordpress/wp-config.php /var/www/html/wp-config.php
 RUN apt-get update && apt-get -y install net-tools wget && \
     wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O /usr/local/bin/cloud_sql_proxy && \ 
     chmod +x /usr/local/bin/cloud_sql_proxy
-
+# download plugins from repo
+RUN bash download-extra.sh
 # custom entrypoint
 COPY wordpress/cloud-run-entrypoint.sh /usr/local/bin/
 
