@@ -1,5 +1,5 @@
 # https://github.com/docker-library/wordpress/blob/9ee913eea382b5d79f852a2301d4390904d2e4d2/php7.3/apache/Dockerfile
-FROM wordpress:5.2.1-php7.3-apache
+FROM darriush/wordpress-1:latest
 
 EXPOSE 8080
 # Use the PORT environment variable in Apache configuration files.
