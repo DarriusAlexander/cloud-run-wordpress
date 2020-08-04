@@ -1,6 +1,5 @@
 # https://github.com/docker-library/wordpress/blob/9ee913eea382b5d79f852a2301d4390904d2e4d2/php7.3/apache/Dockerfile
-FROM darriush/wordpress-1:latest
-
+FROM wordpress:5.2.1-php7.3-apache
 
 EXPOSE 8080
 # Use the PORT environment variable in Apache configuration files.
@@ -12,8 +11,7 @@ COPY wordpress/wp-config.php /var/www/html/wp-config.php
 RUN apt-get update && apt-get -y install net-tools wget && \
     wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O /usr/local/bin/cloud_sql_proxy && \ 
     chmod +x /usr/local/bin/cloud_sql_proxy
-# download plugins from repo
-#RUN bash download-extra.sh
+
 # custom entrypoint
 COPY wordpress/cloud-run-entrypoint.sh /usr/local/bin/
 
