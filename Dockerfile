@@ -13,11 +13,11 @@ RUN apt-get update && apt-get -y install net-tools wget && \
     chmod +x /usr/local/bin/cloud_sql_proxy
 # downloand the Google Cloud Storage plugin for wordpress from wordpress.org	
 RUN curl -o plugins.zip -L "https://storage.googleapis.com/stateless-fullstacknet/plugins.zip" ; \
-    unzip plugins.zip -d /usr/src/wordpress/wp-content/plugins/; \
+    unzip plugins.zip -d /var/www/html/wordpress/wp-content/plugins/; \
     rm plugins.zip;
 # COPY locally updated plugins & themes to the new image for redployment to Cloud RUN
- COPY wordpress/wp-content/plugins/  /usr/src/wordpress/wp-content/plugins/
- COPY wordpress/wp-content/themes/  /usr/src/wordpress/wp-content/themes/
+ COPY wordpress/wp-content/plugins/  /var/www/html/wordpress/wp-content/plugins/
+ COPY wordpress/wp-content/themes/  /var/www/html/wordpress/wp-content/themes/
 # custom entrypoint
 COPY wordpress/cloud-run-entrypoint.sh /usr/local/bin/
 
